@@ -541,6 +541,11 @@
     .touch-hint, .touch-device .touch-hint { display: none; }
   }
 
+  @media (hover: none) and (pointer: coarse) and (min-width: 761px) {
+    .transport, .reset, .immerse { width: 44px; height: 44px; }
+    .transport svg, .reset svg, .immerse svg { width: 16px; height: 16px; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.001s !important; animation-delay: 0s !important; }
   }
